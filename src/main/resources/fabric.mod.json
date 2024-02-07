@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "modid",
+  "version": "${version}",
+
+  "name": "Example Mod",
+  "description": "This is an Example Mod for an Apoli Addon",
+  "authors": [
+    "You!",
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": "",
+    "issues": ""
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.example.yourname.yourmod.ExampleMod"
+    ],
+    "client": [
+      "io.example.yourname.yourmod.ExampleModClient"
+    ],
+    "calio:ordered-resource-listener": [
+      "io.example.yourname.yourmod.ExampleMod"
+    ]
+  },
+  "mixins": [
+	  "modid.mixins.json"
+  ],
+  "depends": {
+    "java": ">=17",
+    "fabricloader": ">=0.15.3",
+    "fabric-api": ">=0.91.2",
+    "minecraft": "~1.20.2",
+    "apoli": ">=2.10.0"
+  },
+  "breaks": {
+    "optifabric": "<=1.11.18",
+    "identity": "<1.14.2-beta"
+  }
+}

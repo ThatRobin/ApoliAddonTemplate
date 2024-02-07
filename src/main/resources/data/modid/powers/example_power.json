@@ -1,0 +1,6 @@
+{
+	"type": "modid:example_power",
+	"condition": {
+		"type": "modid:example_condition"
+	}
+}
